@@ -157,9 +157,9 @@ const MatrixLandingPage = () => {
   
 
       {/* Sponsors Section */}
-      <section className="py-2  sm:py-12">
-      <div className="container mx-auto px-4 sm:px-16">
-      <div className="flex justify-center items-center gap-2 sm:gap-12">
+      <section className="py-1  sm:py-12">
+      <div className="container mx-auto px-4 sm:px-12">
+      <div className="flex justify-center items-center gap-12 sm:gap-12">
       <img src={IEEELogo} alt="IEEE" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={CSLogo} alt="CS" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={SBLogo} alt="SB" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
@@ -169,8 +169,8 @@ const MatrixLandingPage = () => {
       </section>
 
       {/* About Section */}
-      <section className="min-h-screen sm:h-screen flex items-center py-8 sm:py-0">
-      <div className="container mx-auto px-20 sm:px-16 flex flex-col sm:flex-row gap-4 sm:gap-12">
+      <section className=" sm:h-screen flex items-center py-24 sm:py-0">
+      <div className="container mx-auto px-12 sm:px-16 flex flex-col sm:flex-row gap-4 sm:gap-12">
       <div className="w-full sm:w-1/2">
       <div className="relative sm:h-[500px] h-auto">
   <img 
@@ -183,7 +183,7 @@ const MatrixLandingPage = () => {
 
           {/* About Text */}
           <div className="w-full sm:w-1/2 flex flex-col justify-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-white">MATRIX 2.0</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-2 text-white">MATRIX 2.0</h2>
           <p className="text-base sm:text-lg leading-relaxed text-white/90">
           Matrix 2.0 is a 24-hour hackathon designed to bring together tech enthusiasts, innovators,
               and problem solvers. Create real-world solutions and showcase them while
