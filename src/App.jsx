@@ -92,20 +92,19 @@ const MatrixLandingPage = () => {
        <section id="hero" className="relative h-screen pt-1 sm:pt-16">
        <main className="container mx-auto px-2 sm:px-6 pt-80 sm:pt-12 flex justify-center items-center relative h-[calc(100vh-88px)]">
        {/* Centered VR Girl Image */}
-        <div className="absolute inset-10 flex justify-end sm:justify-center items-center">
-          <img
-            src={VRgirl}
-            alt="Person wearing futuristic VR goggles"
-            className="h-[60vh] sm:h-full object-contain z-10"
-          />
-        </div>
+       <div className="absolute inset-10 flex justify-end sm:justify-center items-center">
+      <img
+        src={VRgirl}
+        alt="Person wearing futuristic VR goggles"
+        className="h-[60vh] -scale-x-100 sm:h-full object-contain z-10 translate-x-48 flex sm:scale-x-100 md:translate-x-0"      />
+    </div>
 
         {/* Left Content */}
-        <div className="absolute left-12 sm:left-6 top-1/2 -translate-y-1/2 max-w-xl z-20">
+        <div className="absolute left-12 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
         <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
           
-          <h2 className="text-2xl sm:text-4xl font-light mb-4 sm:mb-8 text-white leading-relaxed">
+          <h2 className="text-2xl sm:text-4xl font-light mb-22 sm:mb-8 text-white leading-relaxed">
           Rewrite Reality in
             <br />
             24 Hours
@@ -145,7 +144,7 @@ const MatrixLandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute right-10 top-40 -translate-y-1/2 z-20 flex gap-4">
+        <div className=" -translate-y-1/2 z-20 flex gap-4 absolute left-12 bottom-0">
   {/* Barcode */}
   <img 
     src={barCode} 
@@ -164,7 +163,7 @@ const MatrixLandingPage = () => {
       <img src={IEEELogo} alt="IEEE" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={CSLogo} alt="CS" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={SBLogo} alt="SB" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
-            <img src={IEDCLogo} alt="IEDC" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
+           {/*<img src={IEDCLogo} alt="IEDC" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />*/}
           </div>
         </div>
       </section>
@@ -173,13 +172,13 @@ const MatrixLandingPage = () => {
       <section className="min-h-screen sm:h-screen flex items-center py-8 sm:py-0">
       <div className="container mx-auto px-20 sm:px-16 flex flex-col sm:flex-row gap-4 sm:gap-12">
       <div className="w-full sm:w-1/2">
-      <div className="relative h-[500px]">
-              <img 
-                src={VRgirl2} 
-                alt="Second VR visualization"
-                className="w-full h-full object-cover rounded-lg mix-blend-lighten"
-              />
-            </div>
+      <div className="relative sm:h-[500px] h-auto">
+  <img 
+    src={VRgirl2} 
+    alt="Second VR visualization"
+    className="w-full h-full object-cover rounded-lg mix-blend-lighten sm:block hidden"
+  />
+</div>
           </div>
 
           {/* About Text */}
@@ -347,49 +346,68 @@ const MatrixLandingPage = () => {
       </div>
     </section>
 {/* Guidelines Section */}
+{/* Guidelines Section */}
 <section id="guidelines" className="py-8 sm:py-24 relative">
-        <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-4 sm:mb-12">GUIDELINES</h2>
-          <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-400/10 to-blue-400/10 rounded-lg p-6 sm:p-8 backdrop-blur-sm border-2 border-teal-400/30">
+    <div className="container mx-auto px-4 sm:px-6">
+        <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-4 sm:mb-12">GUIDELINES</h2>
+        <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-400/10 to-blue-400/10 rounded-lg p-6 sm:p-8 backdrop-blur-sm border-2 border-teal-400/30">
             <ul className="space-y-3 sm:space-y-4 text-white">
-        <li className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-            <span className="text-black font-bold">1</span>
-          </div>
-          <p className="opacity-90">Team size should be between 2-4 members. Cross-college teams are allowed.</p>
-        </li>
-        <li className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-            <span className="text-black font-bold">2</span>
-          </div>
-          <p className="opacity-90">All team members should be present throughout the hackathon duration.</p>
-        </li>
-        <li className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-            <span className="text-black font-bold">3</span>
-          </div>
-          <p className="opacity-90">Participants must bring their own laptops and necessary equipment.</p>
-        </li>
-        <li className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-            <span className="text-black font-bold">4</span>
-          </div>
-          <p className="opacity-90">Project work should start from scratch during the hackathon.</p>
-        </li>
-        <li className="flex items-start gap-3">
-          <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-            <span className="text-black font-bold">5</span>
-          </div>
-          <p className="opacity-90">The decision of judges will be final and binding.</p>
-        </li>
-      </ul>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">1</span>
+                    </div>
+                    <p className="opacity-90">Team Size: The maximum number of participants in each team cannot exceed 4.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">2</span>
+                    </div>
+                    <p className="opacity-90">Reporting Time: All registered teams must report for the offline hackathon at Government Engineering College, Palakkad, before 10:00 AM on 25/01/2025.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">3</span>
+                    </div>
+                    <p className="opacity-90">Theme Announcement: The theme for the hackathon will be provided on the spot.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">4</span>
+                    </div>
+                    <p className="opacity-90">Event Schedule: 
+                        <ul>
+                            <li>The hackathon will start at 10:30 AM on 25/01/2025 and continue until 10:30 AM on 26/01/2025.</li>
+                            <li>A presentation and evaluation of the projects will be conducted after the hackathon ends.</li>
+                        </ul>
+                    </p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">5</span>
+                    </div>
+                    <p className="opacity-90">Work Policy: All work on the project must be completed during the hackathon.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">6</span>
+                    </div>
+                    <p className="opacity-90">Disqualification: Teams may be disqualified at the organizer’s discretion for reasons such as, but not limited to:
+                        <ul>
+                            <li>Breaking the competition rules.</li>
+                            <li>Unsporting behavior.</li>
+                        </ul>
+                    </p> 
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
+    <p className="text-center text-white opacity-90 mt-4">Ensure adherence to these guidelines to make the most of your Matrix 2.0 Hackathon experience!</p> 
 </section>
+{/*Join Us*/}
 <section className="py-24 bg-gradient-to-r from-teal-400/10 to-blue-400/10">
   <div class="container mx-auto px-6 text-left relative">  <img src={joinUs} alt="Join Us" class="w-80 sm:w-full max-w-lg mx-auto" />
-    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <h2 class="text-1xl sm:text-3xl font-bold text-white">Join Us</h2>
+  <div class="absolute top-1/2 left-48 transform -translate-x-1/2 -translate-y-1/2 md:left-1/2">     
+   <h2 class="text-1xl sm:text-3xl font-bold text-white">Join Us</h2>
       <p class="text-1xl sm:text-lg text-white opacity-80 mt-2">at Matrix 2.0 to innovate, collaborate, and compete!</p>
       <a href="https://forms.gle/m4uqbHvKAXyGg8weA" class="inline-block bg-teal-400 text-white px-2 py-1 rounded-full mt-2 hover:bg-teal-500">
         Register 
@@ -422,7 +440,7 @@ const MatrixLandingPage = () => {
       <div>
         <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Contact</h3>
         <p className="text-white opacity-80 text-sm sm:text-base">
-          Email: <a href="mailto:ieeesb@gecskp.ac.in" className="text-blue-400 underline">ieeesb@gecskp.ac.in</a> <br />
+          Email: <a href="mailto:ieee@gecskp.ac.in" className="text-blue-400 underline">ieee@gecskp.ac.in</a> <br />
           Thulasi: <a href="tel:+919809109072" className="text-blue-400 underline">+91 98091 09072</a> <br />
           Meghna: <a href="tel:+919961949726" className="text-blue-400 underline">+91 99619 49726</a> <br />
           Greeshma: <a href="tel:+918289866396" className="text-blue-400 underline">+91 8289 866396</a>
