@@ -96,11 +96,11 @@ const MatrixLandingPage = () => {
       <img
         src={VRgirl}
         alt="Person wearing futuristic VR goggles"
-        className=" h-[70vh] -scale-x-100  sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
+        className=" h-[70vh] -scale-x-100   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
     </div>
 
         {/* Left Content */}
-        <div className="absolute left-12 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
+        <div className="absolute left-8 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
         <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
           
@@ -127,7 +127,7 @@ const MatrixLandingPage = () => {
         </div>
 
         {/* Date Container - Proportionally scaled for mobile */}
-        <div className="absolute bottom-0 right-6 z-20 scale-[0.65] sm:scale-100 origin-bottom-right">
+        <div className="absolute bottom-4 right-4 z-20 scale-[0.65] sm:scale-100 origin-bottom-right">
           <div className="relative">
             <img src={datecnt} alt="Date container" className="w-65" />
             <div className="absolute inset-0 flex flex-col justify-center p-6">
@@ -144,7 +144,7 @@ const MatrixLandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-12 md:bottom-auto md:left-auto md:top-4 md:right-12 z-20 flex gap-4">
+        <div className="absolute bottom-4 left-12 md:bottom-auto md:left-auto md:top-4 md:right-12 z-20 flex gap-4">
   {/* Barcode */}
   <img 
     src={barCode} 
