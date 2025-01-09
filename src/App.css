@@ -1,12 +1,5 @@
-.bg-gradient-to-r {
-  padding-left: 64px;
-  padding-right: 64px;
-}
-.bg-gradient-to-r nav{
-    padding-left: 10px;
-    padding-right: 100px;
-    
-}
+
+
 html {
     scroll-behavior: smooth;
   }

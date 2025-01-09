@@ -15,10 +15,15 @@ import perk4 from "./assets/perk4.png";
 import ticket from"./assets/ticket.png";
 import joinUs from "./assets/joinUs.png";
 import NavLogo from "./assets/NavLogo.png";
+import barCode from "./assets/barCode.png"
 import "./App.css";
 
 const MatrixLandingPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   const perks = [
     {
       title: "24 Hour Hackathon",
@@ -49,16 +54,15 @@ const MatrixLandingPage = () => {
     };
   
   return (
-    <div className="bg-gradient-to-r from-[#041242] to-[#380343] ">
+    <div className="bg-gradient-to-r lg:px-24 from-[#041242] to-[#380343] ">
      
      
-     <nav className="flex justify-between items-center p-2  fixed w-full z-50 bg-gradient-to-r from-[#041242]/90 to-[#380343]/90 backdrop-blur-sm">
-      <img src={NavLogo} alt="Matrix 2.0" className='px-1 h-5 sm:h-8' />
+     <nav className="flex justify-between items-center p-2 w-full z-50 bg-gradient-to-r from-[#041242]/90 to-[#380343]/90 backdrop-blur-sm fixed sm:static">      <img src={NavLogo} alt="Matrix 2.0" className='px-1 h-5 sm:h-8' />
       
       {/* Menu icon for small screens */}
       <div className="lg:hidden">
         <button 
-          className="text-black bg-transparent text-2xl " 
+          className="text-white bg-transparent text-2xl " 
           onClick={() => setMenuOpen(!menuOpen)}
         >
           &#9776;
@@ -66,26 +70,26 @@ const MatrixLandingPage = () => {
       </div>
 
       {/* Navigation Links */}
-      <div className={`lg:flex lg:items-center lg:static lg:w-auto lg:bg-transparent
+      <div className={`lg:flex lg:items-center lg:static lg:w-auto lg:bg-transparent pr-
         ${menuOpen 
-          ? 'absolute top-full left-0 w-full bg-gradient-to-r from-[#041242] to-[#380343] sm:p-4' 
+          ? 'absolute top-full left-0 w-full  bg-gradient-to-r from-[#041242] to-[#380343] sm:p-4' 
           : 'hidden'
         }`}
       >
-        <div className="flex lg:flex-row flex-col gap-2 sm:gap-4 text-white  text-sm tracking-wider">
-          <a href="#hero" className="hover:opacity-80">HOME</a>
+        <div className="flex lg:flex-row flex-col text-center pb-4 pt-4 gap-3 sm:gap-4 text-white  text-sm tracking-wider ">
+          <a href="#hero"  onClick={handleLinkClick} className="hover:opacity-80">HOME</a>
           <span className="opacity-50 hidden lg:inline">•</span>
-          <a href="#schedule" className="hover:opacity-80">SCHEDULE</a>
+          <a href="#schedule"  onClick={handleLinkClick} className="hover:opacity-80">SCHEDULE</a>
           <span className="opacity-50 hidden lg:inline">•</span>
-          <a href="#guidelines" className="hover:opacity-80">GUIDELINES</a>
+          <a href="#guidelines"  onClick={handleLinkClick} className="hover:opacity-80">GUIDELINES</a>
           <span className="opacity-50 hidden lg:inline">•</span>
-          <a href="#contact" className="hover:opacity-80">CONTACT</a>
+          <a href="#contact"  onClick={handleLinkClick} className="hover:opacity-80">CONTACT</a>
         </div>
       </div>
     </nav>
        {/* Hero Section */}
-       <section id="hero" className="relative h-screen pt-8 sm:pt-16">
-       <main className="container mx-auto px-2 sm:px-6 pt-8 sm:pt-12 flex justify-center items-center relative h-[calc(100vh-88px)]">
+       <section id="hero" className="relative h-screen pt-6 sm:pt-16">
+       <main className="container mx-auto px-2 sm:px-6 pt-80 sm:pt-12 flex justify-center items-center relative h-[calc(100vh-88px)]">
        {/* Centered VR Girl Image */}
         <div className="absolute inset-10 flex justify-end sm:justify-center items-center">
           <img
@@ -142,34 +146,14 @@ const MatrixLandingPage = () => {
             </div>
           </div>
         </div>
-
-        {/* Vertical "HACKATHON" text with barcode effect */}
-        <div className="absolute right-12 top-1/2 -translate-y-1/2 z-20 flex">
-          {/* Barcode */}
-          <div className=" h-96">
-            <div className="">
-              {[...Array(30)].map((_, i) => (
-                <div
-                  key={i}
-                  className="bg-white rotate-90"
-                  style={{
-                    width: '3px',
-                    height: i % 3 === 0 ? '24px' : '12px',
-                    marginRight:'0.5px',
-                    
-                  }}
-                />
-              ))}
-            </div>
-          </div>
-          
-          {/* Vertical text */}
-          <div className="flex flex-col text-white text-2xl font-bold tracking-widest">
-            <div className="writing-vertical-rl">
-              HACKATHON
-            </div>
-          </div>
-        </div>
+        <div className="absolute right-10 top-40 -translate-y-1/2 z-20 flex gap-4">
+  {/* Barcode */}
+  <img 
+    src={barCode} 
+    alt="Barcode" 
+    className="h-24 object-contain"
+  /></div>
+       
       </main>
     </section>
   
@@ -226,7 +210,7 @@ const MatrixLandingPage = () => {
 
       {/* Perks Section */}
       <section className="py-8 sm:py-24 relative">
-      <div className="container mx-auto px-4 sm:px-6">
+      <div className="container mx-auto px-4 sm:px-6 ">
         {/* Decorative line */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-[2px] bg-gradient-to-r from-transparent via-teal-400 to-transparent"></div>
         
@@ -318,7 +302,7 @@ const MatrixLandingPage = () => {
                 alt="Ticket" 
                 className="w-full h-auto object-contain" 
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
+              <div className="absolute inset-0 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
                 <p className="text-lg sm:text-4xl font-bold">₹119</p>
                 <p className="text-[10px] sm:text-lg opacity-80 leading-tight">IEEE MEMBERS<br />GEC PALAKKAD</p>
               </div>
@@ -327,9 +311,9 @@ const MatrixLandingPage = () => {
               <img 
                 src={ticket} 
                 alt="Ticket" 
-                className="w-full h-auto object-contain" 
+                className="w-full h-auto object-contain " 
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
+              <div className="absolute inset-0  transition-all duration-300 hover:-translate-y-2 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
                 <p className="text-lg sm:text-4xl font-bold">₹199</p>
                 <p className="text-[10px] sm:text-lg opacity-80 leading-tight">IEEE MEMBERS<br />NON-GEC</p>
               </div>
@@ -343,7 +327,7 @@ const MatrixLandingPage = () => {
                 alt="Ticket" 
                 className="w-full h-auto object-contain" 
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
+              <div className="absolute inset-0 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
                 <p className="text-lg sm:text-4xl font-bold">₹149</p>
                 <p className="text-[10px] sm:text-lg opacity-80 leading-tight">NON-IEEE MEMBERS<br />GEC</p>
               </div>
@@ -354,7 +338,7 @@ const MatrixLandingPage = () => {
                 alt="Ticket" 
                 className="w-full h-auto object-contain" 
               />
-              <div className="absolute inset-0 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
+              <div className="absolute inset-0 transition-all duration-300 hover:-translate-y-2 flex flex-col justify-center items-start text-white pl-2 sm:pl-4"> 
                 <p className="text-lg sm:text-4xl font-bold">₹249</p>
                 <p className="text-[10px] sm:text-lg opacity-80 leading-tight">NON-IEEE MEMBERS<br />NON-GEC</p>
               </div>
@@ -423,10 +407,9 @@ const MatrixLandingPage = () => {
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
       <div>
         <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Organizers</h3>
-        <ul className="list-disc list-inside text-white opacity-80 text-sm sm:text-base">
-          <li>IEEE Computer Society SBC, GEC Palakkad</li>
-          <li>in association with IEEE SB GEC PALAKKAD</li>
-        </ul>
+        <p className="list-disc list-inside text-white opacity-80 text-sm sm:text-base">
+          IEEE Computer Society SBC, GEC Palakkad<br></br>in association with IEEE SB GEC PALAKKAD</p>
+        
       </div>
       <div>
         <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">Location</h3>
