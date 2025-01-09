@@ -57,7 +57,8 @@ const MatrixLandingPage = () => {
     <div className="bg-gradient-to-r lg:px-24 from-[#041242] to-[#380343] ">
      
      
-     <nav className="flex justify-between items-center p-2 w-full z-50 bg-gradient-to-r from-[#041242]/90 to-[#380343]/90 backdrop-blur-sm fixed sm:static">      <img src={NavLogo} alt="Matrix 2.0" className='px-1 h-5 sm:h-8' />
+     <nav className="flex justify-between items-center p-2 w-full z-50 bg-gradient-to-r from-[#041242]/90 to-[#380343]/90 backdrop-blur-sm fixed sm:static">      
+     <img src={NavLogo} alt="Matrix 2.0" className='px-1 h-5 sm:h-8' />
       
       {/* Menu icon for small screens */}
       <div className="lg:hidden">
@@ -88,7 +89,7 @@ const MatrixLandingPage = () => {
       </div>
     </nav>
        {/* Hero Section */}
-       <section id="hero" className="relative h-screen pt-6 sm:pt-16">
+       <section id="hero" className="relative h-screen pt-1 sm:pt-16">
        <main className="container mx-auto px-2 sm:px-6 pt-80 sm:pt-12 flex justify-center items-center relative h-[calc(100vh-88px)]">
        {/* Centered VR Girl Image */}
         <div className="absolute inset-10 flex justify-end sm:justify-center items-center">
@@ -101,11 +102,9 @@ const MatrixLandingPage = () => {
 
         {/* Left Content */}
         <div className="absolute left-12 sm:left-6 top-1/2 -translate-y-1/2 max-w-xl z-20">
-        <p className="text-lg sm:text-xl mb-2 sm:mb-4 text-white font-light tracking-wider">PRESENTING</p>
+        <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
-        <h1 className="text-5xl sm:text-7xl font-bold mb-4 sm:mb-8 tracking-wider text-white">
-        MATRIX 2.0
-          </h1>
+          
           <h2 className="text-2xl sm:text-4xl font-light mb-4 sm:mb-8 text-white leading-relaxed">
           Rewrite Reality in
             <br />
