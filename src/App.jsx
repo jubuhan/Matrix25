@@ -89,14 +89,14 @@ const MatrixLandingPage = () => {
       </div>
     </nav>
        {/* Hero Section */}
-       <section id="hero" className="relative h-screen pt-1 sm:pt-16">
+       <section id="hero" className="relative h-screen f pt-1 sm:pt-16">
        <main className="container mx-auto px-2 sm:px-6 pt-80 sm:pt-12 flex justify-center items-center relative h-[calc(100vh-88px)]">
-       {/* Centered VR Girl Image */}
-       <div className="absolute inset-10 flex justify-end sm:justify-center items-center">
+       {/* Centered VR Girl Image */} 
+       <div className="absolute  inset-0  flex justify-end overflow-hidden sm:justify-center items-center">
       <img
         src={VRgirl}
         alt="Person wearing futuristic VR goggles"
-        className="h-[60vh] -scale-x-100 sm:h-full object-contain z-10 translate-x-48 flex sm:scale-x-100 md:translate-x-0"      />
+        className=" h-[70vh] -scale-x-100  sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
     </div>
 
         {/* Left Content */}
@@ -144,22 +144,23 @@ const MatrixLandingPage = () => {
             </div>
           </div>
         </div>
-        <div className=" flex gap-4 absolute left-12 bottom-0 rotate-180">
+        <div className="absolute bottom-0 left-12 md:bottom-auto md:left-auto md:top-4 md:right-12 z-20 flex gap-4">
   {/* Barcode */}
   <img 
     src={barCode} 
     alt="Barcode" 
-    className="h-24 object-contain"
-  /></div>
+    className="h-24 object-contain rotate-180 sm:h-48 sm:rotate-0"
+  />
+</div>
        
       </main>
     </section>
   
 
       {/* Sponsors Section */}
-      <section className="py-1  sm:py-12">
-      <div className="container mx-auto px-4 sm:px-12">
-      <div className="flex justify-center items-center gap-12 sm:gap-12">
+      <section className="py-2  sm:py-12">
+      <div className="container mx-auto px-6 sm:px-16">
+      <div className="flex justify-center items-center gap-8 sm:gap-12">
       <img src={IEEELogo} alt="IEEE" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={CSLogo} alt="CS" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
             <img src={SBLogo} alt="SB" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
@@ -169,8 +170,8 @@ const MatrixLandingPage = () => {
       </section>
 
       {/* About Section */}
-      <section className=" sm:h-screen flex items-center py-24 sm:py-0">
-      <div className="container mx-auto px-12 sm:px-16 flex flex-col sm:flex-row gap-4 sm:gap-12">
+      <section className="min-h-96 sm:h-screen flex items-center py-8 sm:py-0">
+      <div className="container mx-auto px-20 sm:px-16 flex flex-col sm:flex-row gap-4 sm:gap-12">
       <div className="w-full sm:w-1/2">
       <div className="relative sm:h-[500px] h-auto">
   <img 
@@ -183,7 +184,7 @@ const MatrixLandingPage = () => {
 
           {/* About Text */}
           <div className="w-full sm:w-1/2 flex flex-col justify-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-2 text-white">MATRIX 2.0</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 text-white">MATRIX 2.0</h2>
           <p className="text-base sm:text-lg leading-relaxed text-white/90">
           Matrix 2.0 is a 24-hour hackathon designed to bring together tech enthusiasts, innovators,
               and problem solvers. Create real-world solutions and showcase them while
@@ -346,62 +347,63 @@ const MatrixLandingPage = () => {
       </div>
     </section>
 {/* Guidelines Section */}
+{/* Guidelines Section */}
 <section id="guidelines" className="py-8 sm:py-24 relative">
-      <div className="container mx-auto px-4 sm:px-6">
+    <div className="container mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-4 sm:mb-12">GUIDELINES</h2>
         <div className="max-w-3xl mx-auto bg-gradient-to-r from-teal-400/10 to-blue-400/10 rounded-lg p-6 sm:p-8 backdrop-blur-sm border-2 border-teal-400/30">
-          <ul className="space-y-3 sm:space-y-4 text-white">
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">1</span>
-              </span>
-              <p className="opacity-90">Team Size: The maximum number of participants in each team cannot exceed 4.</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">2</span>
-              </span>
-              <p className="opacity-90">Reporting Time: All registered teams must report for the offline hackathon at Government Engineering College, Palakkad, before 10:00 AM on 25/01/2025.</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">3</span>
-              </span>
-              <p className="opacity-90">Theme Announcement: The theme for the hackathon will be provided on the spot.</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">4</span>
-              </span>
-              <p className="opacity-90">Event Schedule: 
-                <ul>
-                  <li>The hackathon will start at 10:30 AM on 25/01/2025 and continue until 10:30 AM on 26/01/2025.</li>
-                  <li>A presentation and evaluation of the projects will be conducted after the hackathon ends.</li>
-                </ul>
-              </p>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">5</span>
-              </span>
-              <p className="opacity-90">Work Policy: All work on the project must be completed during the hackathon.</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
-                <span className="text-black font-bold">6</span>
-              </span>
-              <p className="opacity-90">Disqualification: Teams may be disqualified at the organizer’s discretion for reasons such as, but not limited to:
-                <ul>
-                  <li>Breaking the competition rules</li>
-                  <li>Unsporting behavior.</li>
-                </ul>
-              </p>
-            </li>
-          </ul>
+            <ul className="space-y-3 sm:space-y-4 text-white">
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">1</span>
+                    </div>
+                    <p className="opacity-90">Team Size: The maximum number of participants in each team cannot exceed 4.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">2</span>
+                    </div>
+                    <p className="opacity-90">Reporting Time: All registered teams must report for the offline hackathon at Government Engineering College, Palakkad, before 10:00 AM on 25/01/2025.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">3</span>
+                    </div>
+                    <p className="opacity-90">Theme Announcement: The theme for the hackathon will be provided on the spot.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">4</span>
+                    </div>
+                    <p className="opacity-90">Event Schedule: 
+                        <ul>
+                            <li>The hackathon will start at 10:30 AM on 25/01/2025 and continue until 10:30 AM on 26/01/2025.</li>
+                            <li>A presentation and evaluation of the projects will be conducted after the hackathon ends.</li>
+                        </ul>
+                    </p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">5</span>
+                    </div>
+                    <p className="opacity-90">Work Policy: All work on the project must be completed during the hackathon.</p> 
+                </li>
+                <li className="flex items-start gap-3">
+                    <div className="w-6 h-6 rounded-full bg-teal-400 flex items-center justify-center flex-shrink-0 mt-1">
+                        <span className="text-black font-bold">6</span>
+                    </div>
+                    <p className="opacity-90">Disqualification: Teams may be disqualified at the organizer’s discretion for reasons such as, but not limited to:
+                        <ul>
+                            <li>Breaking the competition rules.</li>
+                            <li>Unsporting behavior.</li>
+                        </ul>
+                    </p> 
+                </li>
+            </ul>
         </div>
-      </div>
-      <p className="text-center text-white opacity-90 mt-4">Ensure adherence to these guidelines to make the most of your Matrix 2.0 Hackathon experience!</p>
-    </section>
+    </div>
+    <p className="text-center text-white opacity-90 mt-4">Ensure adherence to these guidelines to make the most of your Matrix 2.0 Hackathon experience!</p> 
+</section>
 {/*Join Us*/}
 <section className="py-24 bg-gradient-to-r from-teal-400/10 to-blue-400/10">
   <div class="container mx-auto px-6 text-left relative">  <img src={joinUs} alt="Join Us" class="w-80 sm:w-full max-w-lg mx-auto" />
