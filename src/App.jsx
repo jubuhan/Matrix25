@@ -104,7 +104,7 @@ const MatrixLandingPage = () => {
         <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
           
-          <h2 className="text-2xl sm:text-4xl font-light mb-22 sm:mb-8 text-white leading-relaxed">
+          <h2 className="text-1xl sm:text-4xl font-light mb-22 sm:mb-8 text-white leading-relaxed">
           Rewrite Reality in
             <br />
             24 Hours
@@ -127,7 +127,7 @@ const MatrixLandingPage = () => {
         </div>
 
         {/* Date Container - Proportionally scaled for mobile */}
-        <div className="absolute bottom-4 right-4 z-20 scale-[0.65] sm:scale-100 origin-bottom-right">
+        <div className="absolute bottom-8 right-4 z-20 scale-[0.65] sm:scale-100 origin-bottom-right">
           <div className="relative">
             <img src={datecnt} alt="Date container" className="w-65" />
             <div className="absolute inset-0 flex flex-col justify-center p-6">
@@ -144,7 +144,7 @@ const MatrixLandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-4 left-12 md:bottom-auto md:left-auto md:top-4 md:right-12 z-20 flex gap-4">
+        <div className="absolute bottom-8 left-12 md:bottom-auto md:left-auto md:top-4 md:right-12 z-20 flex gap-4">
   {/* Barcode */}
   <img 
     src={barCode} 
