@@ -100,11 +100,11 @@ const MatrixLandingPage = () => {
     </div>
 
         {/* Left Content */}
-        <div className="absolute left-8 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
+        <div className="absolute left-4 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
         <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
           
-          <h2 className="text-1xl sm:text-4xl font-light mb-22 sm:mb-8 text-white leading-relaxed">
+          <h2 className="text-2xl sm:text-4xl font-light mb-22 sm:mb-8 text-white leading-relaxed">
           Rewrite Reality in
             <br />
             24 Hours
