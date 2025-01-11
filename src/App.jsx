@@ -96,7 +96,7 @@ const MatrixLandingPage = () => {
       <img
         src={VRgirl}
         alt="Person wearing futuristic VR goggles"
-        className=" h-[70vh] -scale-x-100   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
+        className=" h-[70vh] -scale-x-95   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
     </div>
 
         {/* Left Content */}
