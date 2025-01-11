@@ -96,7 +96,7 @@ const MatrixLandingPage = () => {
       <img
         src={VRgirl}
         alt="Person wearing futuristic VR goggles"
-        className="absolute top-12 h-[70vh] -scale-x-100   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
+        className=" h-[70vh] -scale-x-100   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
     </div>
 
         {/* Left Content */}
@@ -109,7 +109,7 @@ const MatrixLandingPage = () => {
             <br />
             24 Hours
           </h2>
-          <p className="text-base sm:text-lg mb-4 sm:mb-8 text-white/90 font-light leading-relaxed">
+          <p className="text-sm sm:text-lg mb-4 sm:mb-8 text-white/90 font-light leading-relaxed">
           Whether you're a coder, designer,
             <br />
             or an ideator, Matrix 2.0 is the
