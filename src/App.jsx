@@ -96,11 +96,11 @@ const MatrixLandingPage = () => {
       <img
         src={VRgirl}
         alt="Person wearing futuristic VR goggles"
-        className=" h-[70vh] -scale-x-95   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
+        className="absolute top-12 h-[70vh] -scale-x-100   sm:h-full object-contain z-10 translate-x-48 sm:scale-x-100 md:translate-x-0"      />
     </div>
 
         {/* Left Content */}
-        <div className="absolute left-4 top-50 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
+        <div className="absolute left-4 sm:left-6 top-64 -translate-y-1/2 max-w-xl z-20">
         <img src={MatrixLogo} alt="Matrix 2.0"  className="w-64 h-auto md:w-48 lg:w-96"/>
 
           
