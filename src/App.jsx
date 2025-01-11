@@ -109,7 +109,7 @@ const MatrixLandingPage = () => {
             <br />
             24 Hours
           </h2>
-          <p className="text-sm sm:text-lg mb-4 sm:mb-8 text-white/90 font-light leading-relaxed">
+          <p className="text-xs sm:text-lg mb-4 sm:mb-8 text-white/90 font-light leading-relaxed">
           Whether you're a coder, designer,
             <br />
             or an ideator, Matrix 2.0 is the
