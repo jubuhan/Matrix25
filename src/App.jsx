@@ -118,11 +118,9 @@ const MatrixLandingPage = () => {
             <br />
             to life, learn, and grow.
           </p>
-          <button className="bg-teal-400 text-white px-6 sm:px-8 py-2 sm:py-3 rounded text-sm sm:text-base flex items-center gap-2 hover:bg-teal-500 transition-colors">
-          <a href='https://forms.gle/m4uqbHvKAXyGg8weA' className='text-white'>Register</a>
-          <svg className="w-3 h-3 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
+          <button className="bg-teal-400 text-white px-2 sm:px-8 py-2 sm:py-3 rounded text-sm sm:text-base flex items-center gap-2 hover:bg-teal-500 transition-colors">
+          <a href='https://forms.gle/m4uqbHvKAXyGg8weA' className='text-white'>Registration Closed</a>
+          
           </button>
         </div>
 
@@ -204,6 +202,7 @@ const MatrixLandingPage = () => {
             ₹15K
           </div>
           <p className="text-lg sm:text-xl mt-2 sm:mt-4 text-white/80 relative z-10">in prizes and rewards</p>
+          <p className="text-4xl sm:text-xl mt-2 sm:mt-4 text-white/80 relative z-10">60+ REGISTRATIONS</p>
         </div>
       </section>
 
@@ -411,7 +410,7 @@ const MatrixLandingPage = () => {
    <h2 class="text-1xl sm:text-3xl font-bold text-white">Join Us</h2>
       <p class="text-1xl sm:text-lg text-white opacity-80 mt-2">at Matrix 2.0 to innovate, collaborate, and compete!</p>
       <a href="https://forms.gle/m4uqbHvKAXyGg8weA" class="inline-block bg-teal-400 text-white px-2 py-1 rounded-full mt-2 hover:bg-teal-500">
-        Register 
+        Registration Closed
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block ml-2" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 .5.5v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 1 0v-5z"/>
         </svg>
