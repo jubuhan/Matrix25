@@ -119,7 +119,7 @@ const MatrixLandingPage = () => {
             to life, learn, and grow.
           </p>
           <button className="bg-teal-400 text-white px-2 sm:px-8 py-2 sm:py-3 rounded text-sm sm:text-base flex items-center gap-2 hover:bg-teal-500 transition-colors">
-          <a href='https://forms.gle/m4uqbHvKAXyGg8weA' className='text-white'>Registration Closed</a>
+          <a href='/' className='text-white'>Registration Closed</a>
           
           </button>
         </div>
@@ -409,7 +409,7 @@ const MatrixLandingPage = () => {
   <div class="absolute top-1/2 left-48 transform -translate-x-1/2 -translate-y-1/2 md:left-1/2">     
    <h2 class="text-1xl sm:text-3xl font-bold text-white">Join Us</h2>
       <p class="text-1xl sm:text-lg text-white opacity-80 mt-2">at Matrix 2.0 to innovate, collaborate, and compete!</p>
-      <a href="https://forms.gle/m4uqbHvKAXyGg8weA" class="inline-block bg-teal-400 text-white px-2 py-1 rounded-full mt-2 hover:bg-teal-500">
+      <a href="/" class="inline-block bg-teal-400 text-white px-2 py-1 rounded-full mt-2 hover:bg-teal-500">
         Registration Closed
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="inline-block ml-2" viewBox="0 0 16 16">
           <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5.5a.5.5 0 0 0 .5.5v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 1 0v-5a.5.5 0 0 0-.5-.5h-2a.5.5 0 0 0-.5.5v5a.5.5 0 0 0 1 0v-5z"/>
